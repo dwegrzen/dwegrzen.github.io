@@ -1,0 +1,10 @@
+#userpic {
+  height: 100px;
+
+}
+
+.chirp {
+  border: 1px groove grey;
+  border-radius: 5px;
+  margin: 3px;
+}
