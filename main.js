@@ -4,7 +4,7 @@ $(document).ready(function(){
 // console.log(data)
 // })
 
-$.getJSON('http://arcane-shore-86443.herokuapp.com/chirps',function(data){
+$.getJSON('https://arcane-shore-86443.herokuapp.com/chirps',function(data){
   displayData(data)
 })
 
