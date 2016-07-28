@@ -25,19 +25,6 @@
       </div>
     </div>
     <div class="container" id="index">
-<script id="chirp" type="text/x-handlebars-template">
-      <div class="row chirp">
-        <div class="col-sm-2">
-          <a href="{{profile}}"><img src="{{userimage}}" class="img-responsive img-rounded center-block" id="userpic"></img></a>
-        </div>
-        <div class="col-sm-10">
-          <h5><a href="{{profile}}" data-remote="false" data-toggle="modal" data-target="#profilemodal">{{name}}</a><small> on {{createdAt}}</small></h5>
-        </div>
-        <div class="col-sm-10">
-          <h4>{{body}}</h4>
-        </div>
-      </div>
-</script>
       <div class="modal fade" tabindex="-1" role="dialog" id=profilemodal>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -46,15 +33,6 @@
               <h4 class="modal-title">modal title</h4>
             </div>
             <div class="modal-body">
-<script id="modaltemplate" type="text/x-handlebars-template">
-            <div class="modal-body1">
-              <img src="{{userimage}}" class="img-responsive img-rounded center-block" id="userpic">
-              <p>{{name}} has been a member of Chirpy since {{joined}}</p>
-              <p>Chirp count: {{chirps}}</p>
-              <p>Followers: {{followers}}</p>
-              <p>Following: {{following}}</p>
-            </div>
-</script>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -63,6 +41,31 @@
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
     </div>
+
+    <script id="chirp" type="text/x-handlebars-template">
+          <div class="row chirp">
+            <div class="col-sm-2">
+              <a href="{{profile}}"><img src="{{userimage}}" class="img-responsive img-rounded center-block" id="userpic"></img></a>
+            </div>
+            <div class="col-sm-10">
+              <h5><a href="{{profile}}" data-remote="false" data-toggle="modal" data-target="#profilemodal">{{name}}</a><small> on {{createdAt}}</small></h5>
+            </div>
+            <div class="col-sm-10">
+              <h4>{{body}}</h4>
+            </div>
+          </div>
+    </script>
+
+    <script id="modaltemplate" type="text/x-handlebars-template">
+        <div class="modal-body1">
+          <img src="{{userimage}}" class="img-responsive img-rounded center-block" id="userpic">
+          <p>{{name}} has been a member of Chirpy since {{joined}}</p>
+          <p>Chirp count: {{chirps}}</p>
+          <p>Followers: {{followers}}</p>
+          <p>Following: {{following}}</p>
+        </div>
+    </script>
+    
   </body>
 
 </html>
