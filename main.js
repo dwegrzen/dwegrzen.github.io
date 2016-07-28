@@ -1,14 +1,8 @@
 $(document).ready(function() {
 
-    // $.getJSON('http://localhost:3000/chirps',function(data){
-    // console.log(data)
-    // })
-
     $.getJSON('https://arcane-shore-86443.herokuapp.com/chirps', function(data) {
         displayData(data)
     })
-
-
 
     function displayData(arr) {
         $.each(arr, function(i, user) {
